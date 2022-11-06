@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(10, 54, 13, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(1, 19, 2);
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: rgb(7, 63, 12);
+  color: rgb(255, 255, 255);
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #history {
+    top: 20px;
+    background-color: #00802b;
+  }
+  
+  #gallery {
+    top: 80px;
+    background-color: #00802b; /* Blue */
+  }
+  
+  #currentpanel {
+    top: 140px;
+    background-color: #00802b; /* Red */
+  }
+  
+  #register {
+    top: 200.3px;
+    background-color: #00802b /* Light Black */
+  }
+  #contact {
+    top: 260px;
+    background-color: #00802b /* Light Black */
+  }
