@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- loading... -->
+<style>
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid rgb(184, 187, 17);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  </style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="/videos/video_AdobeExpress.mp4" type="video/mp4">
+  Your browser does not support video.
+  
+</video>
+<div id="mySidenav" class="sidenav">
+    <a href="/journalpage/index.html" id="history">Journal</a>
+    <a href="/gallery/gallery/index.html" id="gallery">Gallery</a>
+    <a href="/currentpanel/index.html" id="currentpanel">Panel</a>
+    <a href="https://evening-basin-02888.herokuapp.com" id="register">Register</a>
+    <a href="/contactpage/index.html" id="contact">Contact</a>
+  </div>
+<div class="content">
+  <h1>BAIUST COMPUTER CLUB</h1>
+  <p>BANGLADESH ARMY INTERNATIONAL UNIVERSITY OF SCIENCE & TECHNOLOGY</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script src="videoscript.js"></script>
+</body>
+</html>
